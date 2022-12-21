@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int n,a,b,c;
+	int a1,b1,c1;
+	printf("请输入一个数(n):\n");
+	scanf("%d",&n);
+	
+	c = n%10;//个位 
+	b = n%100/10;//十位 
+	a = n/100;//百位 
+		if(  pow(a,3) + pow(b,3) + pow(c,3) ==n )//引入幂函数pow( , ) 
+		{
+			printf("%d 是水仙花数\n",n);
+		}
+		else 
+		{
+			printf("%d 不是水仙花数\n",n);
+		}
+	
+	printf("%d\n%d\n%d\n",a,b,c);
+	
+	return 0;
+}
